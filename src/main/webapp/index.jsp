@@ -90,15 +90,15 @@ color: white;
 									<ul class="dropdown-menu list-unstyled success">
 										<li><a href="#work-section">전체보기</a></li>
 										<li><a
-											href="http://localhost:8080/example/index.jsp#gallery-5">RemoteView™</a></li>
+											href="index.do#gallery-5">RemoteView™</a></li>
 										<li><a
-											href="http://localhost:8080/example/index.jsp#gallery-6">Aiworks㉿</a></li>
+											href="index.do#gallery-6">Aiworks㉿</a></li>
 										<li><a
-											href="http://localhost:8080/example/index.jsp#gallery-7">IljoMatrix™</a></li>
+											href="index.do#gallery-7">IljoMatrix™</a></li>
 										<li><a
-											href="http://localhost:8080/example/index.jsp#gallery-8">ICTtedworks™</a></li>
+											href="index.do#gallery-8">ICTtedworks™</a></li>
 										<li><a
-											href="http://localhost:8080/example/index.jsp#gallery-9">BlockTTo㉿</a></li>
+											href="index.do#gallery-9">BlockTTo㉿</a></li>
 									</ul>
 									</li>
 								

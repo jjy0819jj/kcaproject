@@ -65,40 +65,40 @@ color: white;
 
 								<li class="dropdown"><a href="#" class="nav-link" data-toggle="dropdown">COMPANY</a>
 									<ul class="dropdown-menu list-unstyled success">
-										<li><a href="index.jsp#home2-section">(주)1조</a></li>
-										<li><a href="index.jsp#ceo-hello-section">CEO 인사말</a></li>
-										<li><a href="index.jsp#ceo-history-section">회사연혁</a></li>
-										<li><a href="index.jsp#ceo-vision-section">미션 및 비전</a></li>
+										<li><a href="index.do#home2-section">(주)1조</a></li>
+										<li><a href="index.do#ceo-hello-section">CEO 인사말</a></li>
+										<li><a href="index.do#ceo-history-section">회사연혁</a></li>
+										<li><a href="index.do#ceo-vision-section">미션 및 비전</a></li>
 									</ul></li>
 
 								<li class="dropdown"><a href="#" class="nav-link" data-toggle="dropdown">PRODUCTS</a>
 									<ul class="dropdown-menu list-unstyled success">
-										<li><a href="index.jsp#work-section">전체보기</a></li>
+										<li><a href="index.do#work-section">전체보기</a></li>
 										<li><a
-											href="http://localhost:8080/example/index.jsp#gallery-5">RemoteView™</a></li>
+											href="index.do#gallery-5">RemoteView™</a></li>
 										<li><a
-											href="http://localhost:8080/example/index.jsp#gallery-6">Aiworks㉿</a></li>
+											href="index.do#gallery-6">Aiworks㉿</a></li>
 										<li><a
-											href="http://localhost:8080/example/index.jsp#gallery-7">IljoMatrix™</a></li>
+											href="index.do#gallery-7">IljoMatrix™</a></li>
 										<li><a
-											href="http://localhost:8080/example/index.jsp#gallery-8">ICTtedworks™</a></li>
+											href="index.do#gallery-8">ICTtedworks™</a></li>
 										<li><a
-											href="http://localhost:8080/example/index.jsp#gallery-9">BlockTTo㉿</a></li>
+											href="index.do#gallery-9">BlockTTo㉿</a></li>
 									</ul>
 									</li>
 								
 
 								<li class="dropdown"><a href="#" class="nav-link" data-toggle="dropdown">RESOURCES</a>
 									<ul class="dropdown-menu list-unstyled success">
-										<li><a href="index.jsp#news-section">뉴스레터</a></li>
-										<li><a href="index.jsp#notice-section">공지사항</a></li>
-										<li><a href="index.jsp#video-section">홍보영상</a></li>
+										<li><a href="index.do#news-section">뉴스레터</a></li>
+										<li><a href="index.do#notice-section">공지사항</a></li>
+										<li><a href="index.do#video-section">홍보영상</a></li>
 									</ul></li>
 
 								<li class="dropdown"><a href="#" class="nav-link" data-toggle="dropdown">RECRUIT</a>
 									<ul class="dropdown-menu list-unstyled success">
-										<li><a href="index.jsp#recruit-section">채용공고</a></li>
-										<li><a href="index.jsp#people">인재상</a></li>
+										<li><a href="index.do#recruit-section">채용공고</a></li>
+										<li><a href="index.do#people">인재상</a></li>
 										<c:if test="${sessionScope.email != null}">
 										<li><a href="application.do">입사지원</a></li>
 										</c:if>
@@ -108,9 +108,9 @@ color: white;
 								<li class="dropdown"><a href="#" class="nav-link" data-toggle="dropdown">CONTACT
 										US</a>
 									<ul class="dropdown-menu list-unstyled success">
-										<li><a href="index.jsp#contact-section">찾아오시는 길</a></li>
-										<li><a href="index.jsp#fnq-section">Q&A</a></li>
-										<li><a href="index.jsp#question-section">문의하기</a></li>
+										<li><a href="index.do#contact-section">찾아오시는 길</a></li>
+										<li><a href="index.do#fnq-section">Q&A</a></li>
+										<li><a href="index.do#question-section">문의하기</a></li>
 									</ul></li>
 									</ul>
 						</nav>

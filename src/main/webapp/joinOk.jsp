@@ -12,8 +12,7 @@
 	} else { 
 		alert("회원가입에 실패하셨습니다.")
 		location.href="join.do";
-	} 
-	
+	}
 </script>
 </head>
 <body>

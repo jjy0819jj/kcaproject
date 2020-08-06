@@ -4,9 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>(주)1조 &mdash; No.1 BigData Solution</title>
+<script type="text/javascript">
+	location.href = "index.do";
+</script>
 </head>
 <body>
-<jsp:forward page="index.do" />
 </body>
 </html>

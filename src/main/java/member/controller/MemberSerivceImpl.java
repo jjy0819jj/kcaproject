@@ -2,17 +2,19 @@ package member.controller;
 
 import java.util.List;
 
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import board.bean.BoardDTO;
 import member.bean.MemberDTO;
+import member.dao.LoginDAO;
 import member.dao.MemberDAO;
 
 @Service
 public class MemberSerivceImpl implements MemberService {
 	@Autowired
 	private MemberDAO memberDAO;
+	private LoginDAO loginDAO;
 	
 	@Override
 	public int MemberJoin(MemberDTO memberDTO) {

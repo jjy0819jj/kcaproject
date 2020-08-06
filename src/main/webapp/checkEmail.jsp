@@ -20,12 +20,13 @@
 		window.close();
 		opener.joinForm.pwd.focus();
 	}
+
 </script>
 </head>
 <body>
 <%	if(exist) { %>
 	<%=email %>는 이미 사용중입니다.<br><br>
-	<form action="checkEmail.jsp" method="post">
+	<form action="checkEmail.do" method="post">
 	아이디 <input type="text" name="email">
 		 <input type="submit" value="중복 체크">
 	</form>
@@ -33,7 +34,6 @@
 	<%=email %>는 사용 가능합니다.<br><br>
 	<input type="button" value="사용" onclick="checkIdClose()">
 <%	} %>
-</head>
 <body>
 
 </body>

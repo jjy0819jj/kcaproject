@@ -47,6 +47,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<select id="memberResumeList" resultType="memberDTO">
 		select * from member where resumehit = 0 and file_name != '없음' order by member_code asc
 	</select>
+	
 </mapper>
 
 

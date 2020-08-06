@@ -50,7 +50,7 @@ color: white;
 							꾸준히 경쟁력을 높여야 한다는 것이 제가 가진 직업적 방향입니다.</p>
 
 						<p>
-							<a href="newsLetter1.jsp"
+							<a href="newsLetter1.do"
 								class="btn btn-outline-primary py-3 px-5">View Interview</a>
 						</p>
 
@@ -69,7 +69,7 @@ color: white;
 							생각만 하고 있던 일들을 이루어 낼 수 있고, 더 크게 펼칠 수 있는 곳입니다.</p>
 
 						<p>
-							<a href="newsLetter2.jsp"
+							<a href="newsLetter2.do"
 								class="btn  btn-outline-danger py-3 px-5">View Interview</a>
 						</p>
 
@@ -89,7 +89,7 @@ color: white;
 							기회가 된다면, 제가 도울 수 있는 부분까지 최선을 다하겠습니다.</p>
 
 						<p>
-							<a href="newsLetter3.jsp" target="_blank"
+							<a href="newsLetter3.do" target="_blank"
 								class="btn btn-outline-primary py-3 px-5">View Interview</a>
 						</p>
 

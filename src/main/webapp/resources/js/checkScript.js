@@ -19,7 +19,7 @@ function checkId() {
 		alert("먼저 아이디를 입력하세요.");
 		document.joinFrom.email.focus();
 	} else {
-		window.open("checkEmail.jsp?email=" + sId, "",
+		window.open("checkEmail.do?email=" + sId, "",
 				"width=350 height=100 left=500 top=200");
 		var Idcheck = document.getElementById('IdCheck');
 		Idcheck.style.display = 'none';

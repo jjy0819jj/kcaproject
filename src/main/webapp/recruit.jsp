@@ -19,6 +19,10 @@ th {
 	text-align: center;
 	color: white;
 }
+
+.hover-me:hover {
+	font-weight: bold;
+}
 </style>
 
 <title>(주)1조 &mdash; No.1 BigData Solution</title>
@@ -29,9 +33,9 @@ th {
 			<div class="col-lg-6 mb-5">
 				<!-- services -->
 				<h2 class="section-title">CAREERS</h2>
-				<p>현재 진행중인 Position을 확인하세요.</p>
+				<p><a href="application.do" class="hover-me">현재 진행중인 Position을 확인하세요.</a></p>
 				<hr>
-				<p>열정과 전문성을 가진 인재를 기다립니다.</p>
+				<p><a href="#people-section" class="hover-me">열정과 전문성을 가진 인재를 기다립니다.</a></p>
 			</div>
 		</div>
 

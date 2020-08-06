@@ -62,6 +62,10 @@ th {
 	text-align: center;
 	color: white;
 }
+
+.news-subject {
+	color:black;
+}
 </style>
 </head>
  
@@ -84,16 +88,17 @@ th {
 					<tr>
 						<td>
 							
-							<h1>Development Dept. JongHoon Kim </h1>
-							<p class="lead">(주)1조의  Creativity를 가진 김종훈 님의 인터뷰입니다.</p><hr>
+							<h1 class="news-subject">Development Dept. JongHoon Kim </h1>
+							<p class="lead">(주)1조의 <span style="color:blue"> Creativity</span>를 가진 김종훈 님의 인터뷰입니다.</p><hr>
 							
 							
 							<!-- A Real Hero (and a real human being) -->
 							<p><img src="resources/images/interview_2.jpg"></p><!-- /hero -->
 							<p class="lead">(주)1조는 자신의 생각을 펼칠 수 있는 곳. 생각만 하고 있던 일들을 이루어 낼 수 있고, 더 크게 펼칠 수 있는 곳입니다.</p><hr>
+							<br>
 							
 							<!-- interview -->
-							<h4 align="left" >(주)1조 가족분들께 본인 소개 좀 해 주세요.</h4>
+							<h4 align="left" class="news-subject">(주)1조 가족분들께 본인 소개 좀 해 주세요.</h4>
 							<p align="left" class="lead">안녕하세요, 2004년부터 (주)1조와 함꼐한 개발부서 김종훈 부장입니다.
 							저는 윈도우 어플리케이션 개발을 담당하고 있습니다. 
 							윈도우 어플리케이션은 윈도우 운영체제에서 사용할 수 있는 프로그램을 말합니다. 
@@ -101,7 +106,7 @@ th {
 							</p>
 							<br>
 							
-							<h4 align="left" >(주)1조에서 업무를 하면서 가장 보람을 느꼈던 순간은 언제인가요?</h4>
+							<h4 align="left" class="news-subject">(주)1조에서 업무를 하면서 가장 보람을 느꼈던 순간은 언제인가요?</h4>
 							<p align="left" class="lead">
 							제가 만든 어플리케이션을 고객이 유용하게 사용하고 있다는 사실 자체만으로도 많은 보람을 느끼고 있습니다.
 							수많은 직업이 존재하지만 다른 사람에게 유용함과 편리함을 제공할 수 있다는 것은 상당히 의미 있는 것이라고 생각합니다.
@@ -111,7 +116,7 @@ th {
 							</p>
 							<br>
 							
-							<h4 align="left" >응용개발 담당자가 되기 위해 가장 중요한 역량은 무엇이라고 생각하나요?</h4>
+							<h4 align="left" class="news-subject">응용개발 담당자가 되기 위해 가장 중요한 역량은 무엇이라고 생각하나요?</h4>
 							<p align="left" class="lead">
 							기술, 배려, 소통, 책임 그리고 어떤 제품을 만들어내겠다는 생각을 가진 분이 필요합니다.
 							어떤 분야든 자신의 직업에 대한 전문성은 기본입니다.
@@ -128,13 +133,13 @@ th {
 							</p>
 							<br>
 							
-							<h4 align="left" >김종훈에게 응용개발이란?</h4>
+							<h4 align="left" class="news-subject">김종훈에게 응용개발이란?</h4>
 							<p align="left" class="lead">
 							저에게 응용개발은 ‘하고 싶고, 할 수 있고, 하고 있는 것’입니다.
 							직업을 떠나 삶의 중요한 부분을 차지하는 것이 되었습니다.
 							회사에 속해 있어 ‘하고 싶고, 할 수 있고, 하고 있는’ 개발이 있지만 속해 있지 않더라도 여전히 같을 것입니다.
 							특히 (주)1조는  자신의 생각을 펼칠 수 있는 곳. 생각만 하고 있던 일들을 이루어 낼 수 있고, 더 크게 펼칠 수 있는 곳입니다. 많은 분들과 이곳에서 함께 꿈을 꾸길 바랍니다.
-							</p>
+							</p><br>
 							<hr>
 							
 						</td>
@@ -144,20 +149,16 @@ th {
 			
 			
 			<!-- content -->
-			<div class="content">
-				
-				<table bgcolor="">
-					<tr>
-						<td class="small" width="20%" style="vertical-align: top; padding-right:10px;"><img src="resources/images/person_1.jpg"></td>
-						<td>
-							<h4 align="left" >Marketing Dept.<small> Sera Lee</small></h4>
-							<p align="left" class="">(주)1조인은 자기 분야의 전문성을 꾸준히 함양하고 자기계발에 몰두합니다. </p>
-							<p align="left" class=""><a align="left" href="newsLetter1.jsp" class="btn">View Interview &raquo;</a></p>
-						</td>
-					</tr>
-				</table>
-			
-			</div><!-- /content -->
+			<div class="content"><table bgcolor="">
+				<tr>
+					<td class="small" width="20%" style="vertical-align: top; padding-right:10px;"><img src="resources/images/person_1.jpg"></td>
+					<td>
+						<h4 align="left" >Marketing Dept.<small> Sera Lee</small></h4>
+						<p align="left" class="">(주)1조인은 자기 분야의 전문성을 꾸준히 함양하고 자기계발에 몰두합니다. </p>
+						<p align="left" class=""><a align="left" href="newsLetter1.do" class="btn">View Interview &raquo;</a></p>
+					</td>
+				</tr>
+			</table></div><!-- /content -->
 			
 			<hr>
 			
@@ -169,7 +170,7 @@ th {
 						<td>
 							<h4 align="left" >Design Dept.<small> Jisoo Yun</small></h4>
 							<p align="left" class="">디자인은 특히 열정과 관심이 중요한 분야라고 생각합니다. 기회가 된다면, 제가 도울 수 있는 부분까지 최선을 다하겠습니다.</p>
-							<p align="left" class=""><a align="left" href="newsLetter3.jsp" class="btn">View Interview &raquo;</a></p>
+							<p align="left" class=""><a align="left" href="newsLetter3.do" class="btn">View Interview &raquo;</a></p>
 						</td>
 					</tr>
 				</table>

@@ -7,6 +7,7 @@
 <div>
 	<h2 class="section-title">Manager</h2>
 </div>
+
 <table class="table table-hover" id="contents">
 	<tr>
 		<th>이름</th>

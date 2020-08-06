@@ -56,6 +56,11 @@ background-color: #352961;
 text-align: center;
 color: white;
 }
+
+.hover-me:hover {
+	font-weight: bold;
+	text-decoration: underline;
+}
 </style>
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -111,7 +116,7 @@ color: white;
 							</tr>
 							<tr>
 								<td>입사지원서</td>
-								<td>${memberDTO.file_name}</td>
+								<td><a href="resources/resume/${memberDTO.file_name}"><span class="hover-me" style="color:blue">${memberDTO.file_name}</span></a></td>
 							</tr>
 						</tbody>
 					</table>

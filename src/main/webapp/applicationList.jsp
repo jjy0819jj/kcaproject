@@ -20,17 +20,23 @@ th {
 	text-align: center;
 	color: white;
 }
+
+.hover-me:hover {
+	font-weight: bold;
+	text-decoration: underline;
+}
 </style>
 
 <title>Insert title here</title>
 </head>
 <body>
 
-	<form action="applicationInsert.do" method="post"
-		enctype="multipart/form-data">
-		<div>
-			<h2 class="section-title">APPLICATION</h2>
+	<form action="applicationInsert.do" method="post" enctype="multipart/form-data">
+		<div class="col-lg-6 mb-5">
+			<h2 class="section-title">APPLICATION</h2><hr>
+			<p>(주)1조에서 열정과 전문성을 가진 인재들을 기다립니다.</p>
 		</div>
+		
 		<table class="table table-hover" id="contents">
 			<thead>
 				<tr>
@@ -57,12 +63,13 @@ th {
 								<span class="badge badge-warning" title='수시'>공채</span>
 							</c:if></td>
 						<td>${applicationDTO.seq}</td>
-						<td><c:if
-								test="${fn: contains(applicationDTO.subject, '2019')}">
+						<td>
+							<c:if test="${fn: contains(applicationDTO.subject, '2019')}">
 								${applicationDTO.subject}
-								</c:if> <c:if test="${fn: contains(applicationDTO.subject, '2020')}">
+							</c:if> <c:if test="${fn: contains(applicationDTO.subject, '2020')}">
 								<strong>${applicationDTO.subject}</strong>
-							</c:if></td>
+							</c:if>
+						</td>
 						<td>${applicationDTO.appdate}</td>
 						<td>${applicationDTO.logtime}</td>
 						<td><span class="badge badge-dark plusIcon">▼</span> <span
@@ -72,21 +79,21 @@ th {
 						<td colspan="6" align="left"><c:if
 								test="${fn: contains(applicationDTO.subject, '2019')}"></c:if> <c:if
 								test="${fn: contains(applicationDTO.subject, '2020')}">
-								<a href="resources/file/recruit_detail.pdf">▶ 채용공고/직무상세 모집요강</a>
+								<a href="resources/file/recruit_detail.pdf">▶
+								<span class="hover-me" style="color:blue">채용공고/직무상세 모집요강</span></a>
 								<br>
 								<a href="resources/file/recruit_application.docx" download
-									target="_blank">▶ 입사지원서 다운로드 </a>
+									target="_blank">▶ <span class="hover-me" style="color:blue">입사지원서 다운로드</span></a>
 								<br>
+								<hr>
 							</c:if> <c:if test="${fn: contains(applicationDTO.subject, '2019')}">
 								<a>${applicationDTO.content}</a>
-								<hr>
 							</c:if> <c:if test="${fn: contains(applicationDTO.subject, '2020')}">
-								<a>▶ ${applicationDTO.content}</a>
-								<hr>
+								<a>▶ ${applicationDTO.content}</a> &nbsp;
 								<input type="file" name="uploadFile" class="btn btn-outline-primary">
 								<button type="submit" class="btn btn-outline-primary">업로드</button>
-								<hr>
 							</c:if>
+							<hr>
 							<p>▶ 또는 e-mail: 1jo_recruit@1jo.com로, 영문 이력서 및 자기소개서 송부해주시면
 								연락 드리겠습니다. (디자인 및 개발 직군의 경우 포트폴리오 첨부 필수)</p>
 							<p>▶ 지원서 및 이력서 파일확장자는 .zip, .docx, .xlsx, .pdf 만 가능한 점 참고

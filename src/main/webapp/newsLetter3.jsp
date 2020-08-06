@@ -62,6 +62,10 @@ th {
 	text-align: center;
 	color: white;
 }
+
+.news-subject {
+	color:black;
+}
 </style>
 </head>
  
@@ -84,22 +88,23 @@ th {
 					<tr>
 						<td>
 							
-							<h1>Design Dept. Jisoo Yun</h1>
-							<p class="lead">(주)1조의 Communication Leader, 윤지수 군의 인터뷰입니다.</p><hr>
+							<h1 class="news-subject">Design Dept. Jisoo Yun</h1>
+							<p class="lead">(주)1조의 <span style="color:blue">Communication Leader</span>, 윤지수 군의 인터뷰입니다.</p><hr>
 							
 							
 							<!-- A Real Hero (and a real human being) -->
 							<p><img src="resources/images/interview_3.jpg"></p><!-- /hero -->
 							<p class="lead">디자인은 특히 열정과 관심이 중요한 분야라고 생각합니다. 기회가 된다면, 제가 도울 수 있는 부분까지 최선을 다하겠습니다.</p><hr>
+							<br>
 							
 							<!-- interview -->
-							<h4 align="left" >(주)1조 가족분들께 본인 소개 좀 해 주세요.</h4>
+							<h4 align="left" class="news-subject">(주)1조 가족분들께 본인 소개 좀 해 주세요.</h4>
 							<p align="left" class="lead">2017년부터 (주)1조  Design 부서와 함꼐한 윤지수입니다. 반갑습니다(웃음).
 							(주)1조를 외부에 알리는 일부터 시작하여, 제품을 만드는 일, 그리고 그 제품 안에서 사용고객들이 필요한 가치를 만들 수 있도록
 							UI/UX 설계에도 동참하고 있습니다. 고객 접점에서의 최전방이기 때문에 전사적으로 디자인 지원을 다방면으로 하기도 합니다.</p>
 							<br>
 							
-							<h4 align="left" >(주)1조에서 일하며 보람을 느꼈던 순간은 언제인가요?</h4>
+							<h4 align="left" class="news-subject">(주)1조에서 일하며 보람을 느꼈던 순간은 언제인가요?</h4>
 							<p align="left" class="lead">
 							한창 바쁠 때는 야근을 하기도 하지만, 선배 그리고 동료, 후배들과 그런 과정을 거쳐 세상에 나오게 되는 제품들이나 산출물들을 볼 때 마다 보람을 느낍니다.
 							물론 여기에 피드백도 좋다면 ‘금상첨화’ 이겠지요! 칭찬은 고래를 춤추게 한다고 하죠?
@@ -109,7 +114,7 @@ th {
 							</p>
 							<br>
 							
-							<h4 align="left" >디자인 담당자가 되기 위해 가장 중요한 역량은 무엇이라고 생각하나요?</h4>
+							<h4 align="left" class="news-subject">디자인 담당자가 되기 위해 가장 중요한 역량은 무엇이라고 생각하나요?</h4>
 							<p align="left" class="lead">
 							사람을 이해하는 것이 디자이너로서 가장 중요한 역량으로 보고 있습니다.
 							디자인은 감성적인 장르의 업으로 제일 첫째로 각각의 업무마다의 고객을 최우선으로 이해하여야 하며,
@@ -120,12 +125,12 @@ th {
 							</p>
 							<br>
 							
-							<h4 align="left" >앞으로의 목표가 있다면 무엇인가요?</h4>
+							<h4 align="left" class="news-subject">앞으로의 목표가 있다면 무엇인가요?</h4>
 							<p align="left" class="lead">
 							디자인팀의 모든 팀원이 ‘같이 일하고 싶은 디자이너’ 가 되기를 바라고 있습니다. 보는 시각에 따라 해석이 다를 수 있겠는데요, 그냥 성격 좋은 협업자가 아닌, 팀원 개개인들이 필요에 따라 디자인 자존감을 굳히지 않는 결의를 보이기도 하며, 같이 일하는 사람들에게 감성적인 리드를 하여 협업하는 이들로부터 이 사람과 같이 하면 믿음직하다! 라는 인식을 만들 수 있도록 팀 내부 자체적으로 프로세스 개선 및 효과적으로 디자인하는 방법을 계속 연구하고 실행해 가고 있습니다.
 							한마디 덧붙이자면 디자이너는 디자인에만 신경을 쓸 때 가장 빛나며 행복해합니다. 이러한 환경을 계속 만들어가고자 합니다.
 							또한 디자인은 특히 열정과 관심이 중요한 분야라고 생각합니다. 후배분들! 기회가 된다면, 제가 도울 수 있는 부분까지 최선을 다하겠습니다.
-							</p>
+							</p><br>
 							<hr>
 							
 						</td>
@@ -136,14 +141,13 @@ th {
 			
 			<!-- content -->
 			<div class="content">
-				
 				<table bgcolor="">
 					<tr>
 						<td class="small" width="20%" style="vertical-align: top; padding-right:10px;"><img src="resources/images/person_1.jpg"></td>
 						<td>
 						<h4 align="left" >Marketing Dept.<small> Sera Lee</small></h4>
 							<p align="left" class="">(주)1조인은 자기 분야의 전문성을 꾸준히 함양하고 자기계발에 몰두합니다. </p>
-							<p align="left" class=""><a align="left" href="newsLetter1.jsp" class="btn">View Interview &raquo;</a></p>
+							<p align="left" class=""><a align="left" href="newsLetter1.do" class="btn">View Interview &raquo;</a></p>
 						</td>
 					</tr>
 				</table>
@@ -159,7 +163,7 @@ th {
 						<td>
 							<h4 align="left" >Development Dept.<small> JongHoon Kim</small></h4>
 							<p align="left" class="">저에게 있어 (주)1조는 자신의 생각을 펼칠 수 있는 곳. 생각만 하고 있던 일들을 이루어 낼 수 있고, 더 크게 펼칠 수 있는 곳입니다.</p>
-							<p align="left" class=""><a align="left" href="newsLetter2.jsp" class="btn">View Interview &raquo;</a></p>
+							<p align="left" class=""><a align="left" href="newsLetter2.do" class="btn">View Interview &raquo;</a></p>
 						</td>
 				</tr>
 			</table></div><!-- /content -->

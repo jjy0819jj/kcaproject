@@ -6,6 +6,7 @@
 <div>
 	<h2 class="section-title">Manager</h2>
 </div>
+
 <table class="table table-striped" id="contents" style="">
 	<thead>
 		<tr>

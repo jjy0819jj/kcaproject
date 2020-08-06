@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <div class="container section-counter">
 	<div>
-		<h2 class="section-title">Manager</h2>
+		<h2 class="section-title">Manager</h2><hr><br>
 	</div>
 	<div class="row">
 		<div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay=""
@@ -69,8 +69,7 @@
 
 
 	<div class="row">
-		<span>NEW Users<br> <small class="form-text text-muted">신규
-				가입자 현황</small></span>
+		<span>NEW Users<br> <small class="form-text text-muted">신규 가입자 현황</small></span>
 		<hr>
 		<canvas class="my-4 w-100" id="myChart" width="900" height="300"></canvas>
 	</div>

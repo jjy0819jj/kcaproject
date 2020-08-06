@@ -14,6 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.FileCopyUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -21,17 +22,30 @@ import member.bean.MemberDTO;
 
 @Controller
 public class MemberController {
+	
 	@Autowired
 	private MemberService memberService;
 	
-	@RequestMapping(value = "/join.do")
+	//1-1.회원가입 페이지 호출
+	@RequestMapping(value = "join.do")
 	public ModelAndView joinForm() {
 		ModelAndView modelAndView = new ModelAndView();
 		modelAndView.setViewName("join.jsp");
 		return modelAndView;  
 	}
 	
-	@RequestMapping(value = "/joinOk.do")
+	//1-2.회원가입-이메일 중복확인 창 호출
+	@RequestMapping(value = "checkEmail.do")
+	public ModelAndView checkEmail(HttpServletRequest request) {
+		
+		ModelAndView modelAndView = new ModelAndView();
+		modelAndView.setViewName("checkEmail.jsp");
+		
+		return modelAndView; 
+	}
+	
+	//1-3.회원가입 완료 페이지 호출
+	@RequestMapping(value = "joinOk.do")
 	public ModelAndView memberJoin(HttpServletRequest request) {
 		
 		try {
@@ -64,7 +78,8 @@ public class MemberController {
 		return modelAndView; 
 	}
 	
-	@RequestMapping(value = "/mypage.do")
+	//2.마이페이지 호출
+	@RequestMapping(value = "mypage.do")
 	public ModelAndView memberView(HttpServletRequest request) {
 		HttpSession session = request.getSession();
 		String email = (String) session.getAttribute("email");
@@ -79,67 +94,8 @@ public class MemberController {
 		return modelAndView;
 	}
 	
-	
-	@RequestMapping(value = "/memberUpdateForm.do")
-	public ModelAndView memberUpdateForm(HttpServletRequest request) {
-		String email = request.getParameter("email");
-		
-		MemberDTO memberDTO = memberService.memberView(email);
-		ModelAndView modelAndView = new ModelAndView();
-		modelAndView.addObject("email",email);
-		modelAndView.addObject("memberDTO",memberDTO);
-		modelAndView.setViewName("memberUpdateForm.jsp");
-		return modelAndView;
-	}
-	
-	@RequestMapping(value = "/memberUpdate.do")
-	public ModelAndView memberUpdate(HttpServletRequest request) {
-		
-		try {
-			request.setCharacterEncoding("UTF-8");
-		} catch (UnsupportedEncodingException e) {
-			e.printStackTrace();
-		}
-		String email = request.getParameter("email");
-		String pwd = request.getParameter("pwd");
-		String tel = request.getParameter("tel");
-		String tel2 = request.getParameter("tel2");
-		String tel3 = request.getParameter("tel3");
-		int member_code =Integer.parseInt(request.getParameter("member_code"));
-		String addr = request.getParameter("addr");
-		
-		// DB
-		MemberDTO memberDTO = new MemberDTO();
-		memberDTO.setPwd(pwd);
-		memberDTO.setTel(tel);
-		memberDTO.setTel2(tel2);
-		memberDTO.setTel3(tel3);
-		memberDTO.setMember_code(member_code);
-		memberDTO.setAddr(addr);
-		memberDTO.setEmail(email);
-		
-		int su = memberService.memberUpdate(memberDTO);
-		ModelAndView modelAndView = new ModelAndView();
-		modelAndView.addObject("su", su);
-		modelAndView.addObject("email", email);
-		modelAndView.setViewName("memberUpdate.jsp");
-		return modelAndView; 
-	}
-	
-	@RequestMapping(value = "memberDelete.do")
-	public ModelAndView memberDelete(HttpServletRequest request) {
-		String email = request.getParameter("email"); 
-		
-		int su = memberService.memberDelete(email);
-		ModelAndView modelAndView = new ModelAndView();
-		modelAndView.addObject("su", su);
-		modelAndView.addObject("email", email);
-		modelAndView.setViewName("memberDelete.jsp");
-		return modelAndView;
-	}
-	
-	
-	@RequestMapping(value = "/applicationInsert.do")
+	//3.이력서 업로드
+	@RequestMapping(value = "applicationInsert.do")
 	public ModelAndView fileUpload(HttpServletRequest request,MultipartFile uploadFile) throws UnsupportedEncodingException{
 		HttpSession session = request.getSession();
 		String email = (String) session.getAttribute("email");
@@ -149,7 +105,7 @@ public class MemberController {
 			e1.printStackTrace();
 		}
 		
-		String filePath = "C:\\Users\\hiiam\\bigdata_yjh\\workspace_s\\TeamProject\\src\\main\\webapp\\resources\\resume";
+		String filePath = "C:\\Users\\yjh\\bigdata_yjh\\workspace_s\\TeamProject\\src\\main\\webapp\\resources\\resume";
 		String fileName = new String(uploadFile.getOriginalFilename().getBytes("8859_1"),"UTF-8");
 		
 		File file = new File(filePath,fileName);
@@ -168,24 +124,6 @@ public class MemberController {
 		ModelAndView modelAndView = new ModelAndView();
 		modelAndView.addObject("su", su);
 		modelAndView.setViewName("applicationInsert.jsp");
-		return modelAndView;
-		
-	}
-	
-	@RequestMapping(value = "/resumeView.do")
-	public ModelAndView resumeHit(HttpServletRequest request) {
-		String email = request.getParameter("email");
-		String file_name = request.getParameter("file_name");
-		
-		MemberDTO memberDTO = new MemberDTO();
-		memberDTO.setFile_name(file_name);
-		memberDTO.setEmail(email);
-		
-		int su = memberService.resumeHit(memberDTO);
-		ModelAndView modelAndView = new ModelAndView();
-		modelAndView.addObject("su", su);
-		modelAndView.addObject("file_name", file_name);
-		modelAndView.setViewName("resumeView.jsp");
 		return modelAndView;
 	}
 }

@@ -19,6 +19,10 @@ background-color: #352961;
 text-align: center;
 color: white;
 }
+
+.important {
+	font-weight: bold;
+}
 </style>
 
 <title>Insert title here</title>
@@ -59,7 +63,14 @@ color: white;
 								<span class="badge badge-primary" title='공지사항입니다.'>공지</span>
 								</c:if>
 								</td>
-								<td>${dto.subject}</td>
+								<td>
+								<c:if test="${dto.rank==1 }">
+								<span class="important">${dto.subject}</span>
+								</c:if>
+								<c:if test="${dto.rank!=1 or currTime == dto.logtime}">
+								${dto.subject}
+								</c:if>
+								</td>
 								<td>${dto.logtime}</td>
 								<td><span class="badge badge-dark plusIcon">▼</span>
 									<span class="badge badge-light plusIcon" style="display: none">▲</span></td>

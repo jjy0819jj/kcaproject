@@ -2,6 +2,7 @@ package member.controller;
 
 import java.util.List;
 
+
 import member.bean.MemberDTO;
 
 public interface MemberService {
@@ -25,4 +26,5 @@ public interface MemberService {
 		
 		public int resumeHit(MemberDTO memberDTO);
 		public List<MemberDTO> memberResumeList();
+		
 }

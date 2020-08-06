@@ -8,6 +8,11 @@ import java.sql.SQLException;
 
 import javax.servlet.http.HttpSession;
 
+import org.mybatis.spring.SqlSessionTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import member.bean.MemberDTO;
+
 public class LoginDAO {
 	String driver = "oracle.jdbc.driver.OracleDriver";
 	String url = "jdbc:oracle:thin:@localhost:1521:xe";
@@ -60,36 +65,48 @@ public class LoginDAO {
 		}
 		return name;
 	}
+	
+	
+	/*
+	@Autowired
+	private SqlSessionTemplate sqlSession;
+	
+	public String login(String email, String pwd){		
+		return sqlSession.selectOne("member.login", email);
+	}
+	
+	*/
+	
 	public void logout(HttpSession session) {
 		session.invalidate();
 	}
 	
-	// id 寃��궗
-		public boolean isExistId(String email) {
-			boolean exist = false;
-			String sql = "select * from member where email=?";
-			conn = getConnection();
+	// id 중복체크
+	public boolean isExistId(String email) {
+		boolean exist = false;
+		String sql = "select * from member where email=?";
+		conn = getConnection();
+		try {
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, email);
+			rs = pstmt.executeQuery();
+			if (rs.next()) {
+				exist = true;	// id媛� 議댁옱�븳�떎�뒗 �쓽誘몄엯�땲�떎.
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
 			try {
-				pstmt = conn.prepareStatement(sql);
-				pstmt.setString(1, email);
-				rs = pstmt.executeQuery();
-				if (rs.next()) {
-					exist = true;	// id媛� 議댁옱�븳�떎�뒗 �쓽誘몄엯�땲�떎.
-				}
+				if (rs != null)
+					rs.close();
+				if (pstmt != null)
+					pstmt.close();
+				if (conn != null)
+					conn.close();
 			} catch (SQLException e) {
 				e.printStackTrace();
-			} finally {
-				try {
-					if (rs != null)
-						rs.close();
-					if (pstmt != null)
-						pstmt.close();
-					if (conn != null)
-						conn.close();
-				} catch (SQLException e) {
-					e.printStackTrace();
-				}
 			}
-			return exist;
 		}
+		return exist;
+	}
 }

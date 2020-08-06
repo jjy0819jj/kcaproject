@@ -13,7 +13,6 @@
 		alert("입사지원 실패")
 		location.href="applicationList.do?pg=1";
 	} 
-	
 </script>
 </head>
 <body>
