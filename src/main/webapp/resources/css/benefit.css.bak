@@ -1,0 +1,95 @@
+h2.benefit_main {
+    margin: 0px 0px 0px 15px;
+    padding: 0px;
+    font-size: 45px;
+    display: inline-block;
+}
+p.text-right{
+    margin: -35px 0px 0px 33px ;
+    font-family: monospace !important;
+    font-size: large !important;
+	font-weight: 600 !important;
+}
+
+div.section-top-border_2 {
+    padding: 50px 0 !important;
+    border-top: 1px dotted #eee !important;
+}
+img.benefit_1{
+	display: inline-block;
+	margin : -30px 20px 40px 30px;
+}
+}
+img.benefit_2{
+	margin: 0px 0px 0px 30px;
+    display: inline-block;
+    vertical-align: top;
+    width: 452px;
+}
+
+.list_benefits .tit{
+	display: block;
+    margin-top: -2px;
+    font-size: 20px;
+    color: #444;
+    word-break: break-all;
+	}
+
+.desc {
+    min-height: 52px;
+    margin-top: 8px;
+    font-size: 15px;
+    line-height: 27px;
+    color: #444;
+    word-break: break-all;
+}
+img.ico_ambience,img.ico_commute,img.ico_culture,
+img.ico_education,img.ico_gift,img.ico_refresh,
+img.ico_salary,img.ico_subsidy
+{
+	background-color : blue;
+	border-radius: 70%;
+    float: left;
+    margin: -5px 15px 30px 15px;
+}
+
+li.li_ico_ambience,li.li_ico_commute,li.li_ico_culture,
+li.li_ico_education,li.li_ico_gift,li.li_ico_refresh,
+li.li_ico_salary,li.li_ico_subsidy
+{
+	width: 33%;
+    display: inline-block;
+	height: 125px;
+}
+table.benefit_table
+{
+	font-weight: 600;
+	 width: 745px;
+	 height : 500px;
+	 text-align : center;
+	 margin: -440px 0px 0px 555px;
+}
+ul.list_benefits{
+	font-weight: 600;
+	margin: 50px 0px 0px 0px;
+}
+
+img.service-1{
+	width : 500px;	
+	margin: 0px 0px 0px -30px;
+}
+img.service-2{
+	width : 500px;
+	margin: 0px 0px 0px -47px
+}
+p.text-left{
+	display: inline-block;
+}
+div.row_exam {
+    width: 500px;
+    display: inline-block;
+    margin: -360px 50px 0px 0px;
+}
+h3.mb-30_exam{
+	margin: 0px 827px 65px 0px;
+}

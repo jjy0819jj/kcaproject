@@ -5,17 +5,17 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 <configuration>
 	<!-- 클래스에 별명 설정 -->
 	<typeAliases>
-		<typeAlias type="member.bean.MemberDTO" alias="memberDTO"/>
-		<typeAlias type="board.bean.BoardDTO" alias="boardDTO"/>
-		<typeAlias type="board.bean.NoticeDTO" alias="noticeDTO"/>
-		<typeAlias type="board.bean.ApplicationDTO" alias="applicationDTO"/>
+		<typeAlias type="statistic.bean.statisticDTO" alias="statisticDTO"/>
+		<typeAlias type="statistic.bean.CommentDTO" alias="CommentDTO"/>
+		<typeAlias type="admin.bean.coronaAvgDTO" alias="coronaAvgDTO"/>
 	</typeAliases>
 	
 
 	<!-- SQL Mapper 설정 -->
 	<mappers>
-		<mapper resource="mybatis/member-mapping.xml"/>
-		<mapper resource="mybatis/board-mapping.xml" />
+		<mapper resource="mybatis/main-mapping.xml"/>
+		<mapper resource="mybatis/admin-mapping.xml"/>
+		<mapper resource="mybatis/statistic-mapping.xml"/>
 	</mappers>
 	
 </configuration>

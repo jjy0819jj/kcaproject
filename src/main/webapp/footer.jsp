@@ -1,133 +1,62 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
-	<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<title>(주)1조 &mdash; No.1 BigData Solution</title>
-<meta charset="utf-8">
-<meta name="viewport"
-	content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-	
-<link
-	href="https://fonts.googleapis.com/css?family=Oswald:400,700|Muli:300,400,700,900"
-	rel="stylesheet">
-
-<link rel="stylesheet" href="fonts/icomoon/style.css">
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/jquery-ui.css">
-<link rel="stylesheet" href="css/owl.carousel.min.css">
-<link rel="stylesheet" href="css/owl.theme.default.min.css">
-<link rel="stylesheet" href="css/owl.theme.default.min.css">
-<link rel="stylesheet" href="css/jquery.fancybox.min.css">
-<link rel="stylesheet" href="css/bootstrap-datepicker.css">
-<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-<link rel="stylesheet" href="css/aos.css">
-<link rel="stylesheet" href="css/style.css">
-
-
-<style>
-table {
-text-align: center;
-}
-
-th {
-background-color: #352961;
-text-align: center;
-color: white;
-}
-</style>
-</head>
-
-<body data-spy="scroll" data-target=".site-navbar-target"
-	data-offset="300">
-
-		<footer class="footer-section bg-light">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4">
-						<h3>A b o u t U s</h3>
-						<ul class="list-unstyled footer-links">
-							<li><a class="smoothscroll">전 자 정 보 공 시</a></li>
-							<li><a class="smoothscroll">내 부 정 보 관 리 규 정</a></li>
-							<li><a class="smoothscroll">개 인 정 보 처 리 방 침</a></li>
-						</ul>
-					</div>
-
-					<div class="col-md-3 ml-auto">
-						<h3>s i t e l i n k s</h3>
-						<ul class="list-unstyled footer-links">
-							<li><a href="#home-section" class="smoothscroll">C O M P A N Y</a></li>
-							<li><a href="#work-section" class="smoothscroll">P R O D U C T S</a></li>
-							<li><a href="#news-section" class="smoothscroll">R E S O U R C E S</a></li>
-							<li><a href="#recruit-section" class="smoothscroll">R E C R U I T</a></li>
-							<li><a href="#contact-section" class="smoothscroll">C O N T A C T U S</a></li>
-						</ul>
-					</div>
-
-					<div class="col-md-4">
-						<h3>S u b s c r i b e</h3>
-						<ul class="list-unstyled footer-links">
-							<li><a class="smoothscroll">고 객 센 터 : 070-7011-3900 (월 ~ 금, 09 ~ 18시)</a></li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="row pt-5 mt-5 text-center">
-					<div class="col-md-12">
-						<div class="border-top pt-5">
-							<p>
-								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-								Copyright &copy;
-								<script>
-									document.write(new Date().getFullYear());
-								</script>
-								All rights reserved | <a
-									href="http://localhost:8080/example/index.jsp" target="_blank">(주)1JO CORP.</a>
-								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+<!-- Start home-about Area -->
+			<section class="home-about-area section-gap" id="about">
+				<div class="container">
+					<div class="row justify-content-center align-items-center">
+						<div class="col-lg-8 col-md-12 home-about-left">
+							<h1>
+								ABOUT US
+							</h1>
+							<p class="pb-20">
+									테스트사업추진단장 : 최이목 | 이메일 : ryu@kca21.com<br>
+									사업자등록번호 : 114-81-88624 | 전화 : 02)532-0532 | 팩스 : 02) 532-0231<br>
+									주소 : 서울시 서초구 반포본동 891번지 대윤빌딩<br>
 							</p>
 
+							<p class="footer-text">
+									Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+							</p>
+						</div>
+						<div class="col-lg-4 col-md-12 home-about-right relative">
+							<form class="form-wrap" action="#">
+								<h1>CONTACT US</h4>
+								<div class="form-select" id="service-select"">
+									<select>
+										<option value="1">Select Service</option>
+										<option value="2">사업 문의</option>
+										<option value="3">채용 문의</option>
+										<option value="4">기타</option>
+									</select>
+								</div>								
+								<input type="text" class="form-control" placeholder="name">
+								<input type="phone" class="form-control" placeholder="Phone Number">
+								<input type="email" class="form-control" placeholder="Email Address">
+								<textarea name="message" id="" cols="30" rows="5" placeholder="Message" class="form-control"></textarea>
+								<button class="primary-btn header-btn">SEND MAIL</button>
+							</form>
 						</div>
 					</div>
+				</div>	
+			</section>
+<!-- End home-about Area -->	
 
-				</div>
-			</div>
-		</footer>
-
-
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/jquery-ui.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-	<script src="js/aos.js"></script>
-	<script src="js/jquery.fancybox.min.js"></script>
-	<script src="js/jquery.waypoints.min.js"></script>
-	<script src="js/jquery.animateNumber.min.js"></script>
-	<script src="js/jquery.sticky.js"></script>
-	<script src="js/main.js"></script>
-	<script type="text/javascript"
-		src=" http://maps.google.com/maps/api/js?v=3.3&sensor=true"></script>
-	<script src="js/maps.js"></script>
-	<script type="text/javascript">
-	$(document).ready(function () {
-	   $(".plusIcon").click(function () {
-	        var obj = $(this);
-	        if( obj.hasClass("badge-light") ){
-	         obj.hide();
-	         obj.next().show();           
-	         obj.parent().parent().next().show();
-	        }else{
-	          obj.hide();
-	          obj.prev().show();
-	          obj.parent().parent().next().hide();
-	        }
-	   });
-	});
-	</script>
-	<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-</body>
-</html>
+			<script src="js/vendor/jquery-2.2.4.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script src="js/vendor/bootstrap.min.js"></script>			
+			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+  			<script src="js/easing.min.js"></script>			
+			<script src="js/hoverIntent.js"></script>
+			<script src="js/superfish.min.js"></script>	
+			<script src="js/jquery.ajaxchimp.min.js"></script>
+			<script src="js/jquery.magnific-popup.min.js"></script>	
+			<script src="js/owl.carousel.min.js"></script>	
+			<script src="js/hexagons.min.js"></script>							
+			<script src="js/jquery.nice-select.min.js"></script>	
+			<script src="js/jquery.counterup.min.js"></script>
+			<script src="js/waypoints.min.js"></script>							
+			<script src="js/mail-script.js"></script>	
+			<script src="js/main.js"></script>	
+		</body>
+	</html>

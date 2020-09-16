@@ -1,0 +1,29 @@
+p.question{
+	display: inline-block;
+    margin-bottom: 10px;
+    font-size: 36px;
+    color: white;
+	background-color : orange;
+}
+p.explain{
+	color: #000;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.05em;
+	margin: 0px 0px 20px 10px;
+}
+b.{
+    color: #7658db !important;
+   font-weight: 700;
+   }
+   b.hungry
+   {
+   display: inline-block;
+    margin-bottom: 10px;
+    font-size: 36px;
+    color: orange;
+   }
+   div.explain_avg{
+	width : 1095px;
+	background-color : black;
+   }

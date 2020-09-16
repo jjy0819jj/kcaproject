@@ -1,200 +1,84 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
-	<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+	pageEncoding="UTF-8"%>	
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title>(주)1조 &mdash; No.1 BigData Solution</title>
-<meta charset="utf-8">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="shortcut icon" href="img/fav.png">
+<meta name="author" content="codepixer">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta charset="UTF-8">
 
+<!-- Site Title -->
+<title>(주)KCA</title>
 
-	
 <link
-	href="https://fonts.googleapis.com/css?family=Oswald:400,700|Muli:300,400,700,900"
+	href="https://fonts.googleapis.com/css?family=Nanum Gothic:100,200,400,300,500,600,700"
 	rel="stylesheet">
-
-<link rel="stylesheet" href="fonts/icomoon/style.css">
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/jquery-ui.css">
-<link rel="stylesheet" href="css/owl.carousel.min.css">
-<link rel="stylesheet" href="css/owl.theme.default.min.css">
-<link rel="stylesheet" href="css/owl.theme.default.min.css">
-<link rel="stylesheet" href="css/jquery.fancybox.min.css">
-<link rel="stylesheet" href="css/bootstrap-datepicker.css">
-<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-<link rel="stylesheet" href="css/aos.css">
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/header2.css">
-
-
-
-<style>
-table {
-text-align: center;
-}
-
-th {
-background-color: #352961;
-text-align: center;
-color: white;
-}
-</style>
+<!-- CSS -->
+<link rel="stylesheet" href="css/linearicons.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/magnific-popup.css">
+<link rel="stylesheet" href="css/nice-select.css">
+<link rel="stylesheet" href="css/hexagons.min.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="css/owl.carousel.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/nav.css">
+<link rel="stylesheet" href="css/benefit.css">
+<link rel="stylesheet" href="css/recruit.css">
+<link rel="stylesheet" href="css/guide.css">
+<link rel="stylesheet" href="css/mobile.css">
+<link rel="stylesheet" href="css/statistics.css">
 </head>
 
-<body data-spy="scroll" data-target=".site-navbar-target"
-	data-offset="300">
-
-
-		<header class="site-navbar py-4 js-sticky-header site-navbar-target"
-			role="banner">
-
-			<div class="container-fluid">
-				<div class="d-flex align-items-center">
-					<div class="site-logo">
-						<a href="index.do" class="text-uppercase"><img
-							src="images/logo.png" width="100" height="100" alt="Logo"></a>
-					</div>
-					<div>
-						<nav class="site-navigation position-relative text-right"
-							role="navigation">
-							<ul
-								class="site-menu main-menu js-clone-nav mr-auto d-none d-xl-block">
-
-								<li class="dropdown"><a href="#" class="nav-link" data-toggle="dropdown">COMPANY</a>
-									<ul class="dropdown-menu list-unstyled success">
-										<li><a href="index.do#home2-section">(주)1조</a></li>
-										<li><a href="index.do#ceo-hello-section">CEO 인사말</a></li>
-										<li><a href="index.do#ceo-history-section">회사연혁</a></li>
-										<li><a href="index.do#ceo-vision-section">미션 및 비전</a></li>
-									</ul></li>
-
-								<li class="dropdown"><a href="#" class="nav-link" data-toggle="dropdown">PRODUCTS</a>
-									<ul class="dropdown-menu list-unstyled success">
-										<li><a href="index.do#work-section">전체보기</a></li>
-										<li><a
-											href="index.do#gallery-5">RemoteView™</a></li>
-										<li><a
-											href="index.do#gallery-6">Aiworks㉿</a></li>
-										<li><a
-											href="index.do#gallery-7">IljoMatrix™</a></li>
-										<li><a
-											href="index.do#gallery-8">ICTtedworks™</a></li>
-										<li><a
-											href="index.do#gallery-9">BlockTTo㉿</a></li>
-									</ul>
-									</li>
-								
-
-								<li class="dropdown"><a href="#" class="nav-link" data-toggle="dropdown">RESOURCES</a>
-									<ul class="dropdown-menu list-unstyled success">
-										<li><a href="index.do#news-section">뉴스레터</a></li>
-										<li><a href="index.do#notice-section">공지사항</a></li>
-										<li><a href="index.do#video-section">홍보영상</a></li>
-									</ul></li>
-
-								<li class="dropdown"><a href="#" class="nav-link" data-toggle="dropdown">RECRUIT</a>
-									<ul class="dropdown-menu list-unstyled success">
-										<li><a href="index.do#recruit-section">채용공고</a></li>
-										<li><a href="index.do#people">인재상</a></li>
-										<c:if test="${sessionScope.email != null}">
-										<li><a href="application.do">입사지원</a></li>
-										</c:if>
-										<li><a href="mypage.do">마이페이지</a></li>
-									</ul></li>
-
-								<li class="dropdown"><a href="#" class="nav-link" data-toggle="dropdown">CONTACT
-										US</a>
-									<ul class="dropdown-menu list-unstyled success">
-										<li><a href="index.do#contact-section">찾아오시는 길</a></li>
-										<li><a href="index.do#fnq-section">Q&A</a></li>
-										<li><a href="index.do#question-section">문의하기</a></li>
-									</ul></li>
-									</ul>
-						</nav>
-					</div>
-					<div class="ml-auto">
-						<c:choose>
-						<c:when test="${sessionScope.email == null}">
-						<nav class="site-navigation2 position-relative text-right"
-							role="navigation">
-							
-							<ul
-								class="site-menu main-menu site-menu-dark js-clone-nav mr-auto d-none d-xl-block">
-								<li><a href="join.do" class="nav-link">JOIN</a></li>
-								<li class="cta"><a href="login.do" class="nav-link"><span
-										class="border bg-danger rounded text-white border-danger">LOGIN</span></a></li>
-							</ul>
-						</nav>
-						</c:when>
-						<c:otherwise>
-							<nav class="site-navigation2 position-relative text-right"
-							role="navigation">
-							
-							<ul
-								class="site-menu main-menu site-menu-dark js-clone-nav mr-auto d-none d-xl-block">
-								<li><span>${sessionScope.name}님</span></li>
-								<li class="cta"><a href="logout.do" class="nav-link"><span
-										class="border bg-danger rounded text-white border-danger">logout</span></a></li>
-							</ul>
-						</nav>
-						</c:otherwise>
-					</c:choose>
-						<a href="#"
-							class="d-inline-block d-xl-none site-menu-toggle js-menu-toggle float-right"><span
-							class="icon-menu h3"></span></a>
-					</div>
+<body>
+	<header id="header" id="home">
+	<!--  
+		<div class="header-top">
+			<div class="row">
+				<div class="col-lg-12 col-sm-6 col-8 header-top-right no-padding">
+					<ul>
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+						<li><a href="#"><i class="fa fa-behance"></i></a></li>
+					</ul>
 				</div>
 			</div>
-
-		</header>
-
-	<!-- .site-wrap -->
-
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/jquery-ui.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-	<script src="js/aos.js"></script>
-	<script src="js/jquery.fancybox.min.js"></script>
-	<script src="js/jquery.waypoints.min.js"></script>
-	<script src="js/jquery.animateNumber.min.js"></script>
-	<script src="js/jquery.sticky.js"></script>
-	<script src="js/main.js"></script>
-	<script type="text/javascript"
-		src=" http://maps.google.com/maps/api/js?v=3.3&sensor=true"></script>
-	<script src="js/maps.js"></script>
-	<script type="text/javascript">
-	$(document).ready(function () {
-	   $(".plusIcon").click(function () {
-	        var obj = $(this);
-	        if( obj.hasClass("badge-light") ){
-	         obj.hide();
-	         obj.next().show();           
-	         obj.parent().parent().next().show();
-	        }else{
-	          obj.hide();
-	          obj.prev().show();
-	          obj.parent().parent().next().hide();
-	        }
-	   });
-	   
-	   $('.dropdown-menu list-unstyled success').click(function(){
-			  var parent = $(this).parent();
-			  if(parent.hasClass('open')) { 
-			    parent.removeClass('open'); 
-			  } else {
-			     parent.addClass('open');
-			  }
-			});
-	});
-	
-	
-	</script>
-	<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-</body>
-</html>
+		</div>
+	-->
+		<div class="nav-container main-menu">
+			<div class="row align-items-center justify-content-between d-flex">
+				<div id="logo">
+					<a href="index.do"><img src="img/logo.png" alt="" title="" /></a>
+				</div>
+				<nav id="nav-menu-container">
+					<ul class="nav-menu">
+						<li class="menu-active"><a href="index.do">Home</a></li>
+						<li class="menu-has-children"><a href="">대시보드</a>
+							<ul>
+								<li><a href="dashboard.do?cg=1">8개 지자체 코로나 캠페인</a></li>
+								<li><a href="dashboard.do?cg=2">6개 은행 앱</a></li>
+							</ul></li>
+						<li><a href="statistics.do?cg=1&rg=1">날짜별 통계</a></li>
+						<li><a href="guide.jsp">가이드</a></li>
+						<li><a href="services.jsp">사업소개</a></li>
+						<li class="menu-has-children"><a href="">Recruit</a>
+							<ul>
+								<li><a href="role_recruit.jsp">인재상</a></li>
+								<li><a href="recruit.jsp">인재채용</a></li>
+								<li><a href="benefit.jsp">복리후생</a></li>
+							</ul>
+						<li><a href="http://www.kca21.com/"><img src="img/logo3.png" style="width:100px; display="inline-block;""alt="" title="" /></a></li>
+					</ul>
+				</nav>
+				<!-- #nav-menu-container -->
+			</div>
+		</div>
+	</header>
+	<!-- #header -->

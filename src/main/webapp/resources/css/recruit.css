@@ -1,0 +1,62 @@
+div.giTitleArea {
+    box-sizing: border-box;
+    padding: 109px 79px 90px 79px;
+    background: black; no-repeat 0 100%;
+}
+
+b {
+    font-weight: bold;
+}
+div.jkTemplateType_1{
+    margin: 0 30px 30px;
+    padding: 45px 41px;
+    border: 1px solid #eaeaea;
+    background-color: #fff;
+}
+ div.jkGEN_content_1 {
+    background-color: #333132;
+    border-color: #333132;
+	height: 2400px;
+    margin: -70px 0px 0px 0px;
+    padding: 120px 0px 0px 2px;
+}
+ div.jkGEN_content_2 {
+     margin: -85px 30px 30px;
+    padding: 45px 41px;
+    border: 1px solid #eaeaea;
+    background-color: #fff;
+}
+.pjkTemplate .dotTx {
+    font-size: 16px;
+    color: #333;
+    margin-top: 12px;
+    margin-left: 5px;
+    padding-left: 15px;
+    line-height: 1.5;
+}
+p.giBx{
+    font-family:Malgun Gothic,Gulim, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+p.text{
+    font-size: 17px;
+    color: #999;
+    line-height: 28px;
+    letter-spacing: -1px;
+}
+
+.jkTemplateType_1 {
+    background-color: #333132;
+    border-color: #333132;
+}
+p.txEmphasis {
+    font-size: 27px;
+    line-height: 1.6;
+    color: #ff3333;
+    padding-left: 19px;
+    margin-top: 10px;
+}
+div.whole-wrap_2{
+	height: 2300px !important;
+}

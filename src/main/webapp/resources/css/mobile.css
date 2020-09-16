@@ -1,0 +1,29 @@
+@media (min-width: 576px) {
+  .statistics-container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .statistics-container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .statistics-container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .statistics-container {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .statistics-container {
+    max-width: 1500px;
+  }
+}
